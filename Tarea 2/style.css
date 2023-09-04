@@ -1,0 +1,344 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #2e1ac7;
+    --secondary: #e6a800;
+    --gray: #9e9e9e;
+    --primaryfont: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--primaryfont);
+    background-image: linear-gradient(to top,#ffffff71 0%,#fff 100%);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.title  {
+    text-align: center;
+    color: var(--black);
+    font-family: var(--primaryfont);
+    font-weight: 700;
+    margin-bottom: 60px;
+
+}
+
+.title span {
+    font-size: 20px;
+} 
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.nav-bg {
+    background-color: var(--primary);
+}
+
+.primary-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.primary-nav a {
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.primary-nav a:hover {
+    background-color: var(--secondary);
+    color: var(--black);
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, 
+.contenido-hero p {
+    color: var(--white);
+    text-align: center;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject h3{
+    color: var(--primary);
+    text-align: center;
+    font-weight: normal;
+}
+
+.subject p {
+    line-height: 2;
+}
+
+.subject .icons{
+    background-color: var(--secondary);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form {
+    background-color: var(--gray);
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form fieldset{
+    border: none;
+    
+}
+
+.form legend{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    width: 100%;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input label {
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 20%; 
+}
+
+.input input,
+.input textarea {
+    border: none;
+    padding: 15px;
+    width: 80%;
+}
+
+.full {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.team-description p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#fotos-equipo {
+    display: flex;
+    justify-content: center;
+}
+
+.miembro {
+    text-align: center;
+    margin: 10px;
+}
+
+.miembro img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.miembro p {
+    margin: 5px 0;
+}
+
+.miembro2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.miembro2 h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Clases creadas por Benja */
+.container-voluntariado {
+    display: flex;
+}
+
+.content2 {
+    width: 600px;
+    margin: 10px 50px 20px 350px;
+}
+.title2 {
+    text-align: center;
+    font-family: var(--primaryfont);
+}
+
+.fondo-benja {
+    background-image: url(/foto-fondo-benja.jpg); /* Agregamos la imagen de fondo */
+    background-repeat: no-repeat; /* Hacemos que la imagen no se repita */
+    background-size: cover; /* Hacemos que la imagen cubra todo el espacio */
+    background-position: center; /* Centramos la imagen */
+    height: 550px; /* Altura de la imagen */
+    position: relative; /* Posicion relativa para poder posicionar el texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.voluntariado-foto img {
+    width: auto;
+    height: 400px;
+}
+
+.seba {
+    background-image: url('miembro2-background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.seba h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    color: black;
+    background-color: transparent;
+}
+
+.seba p {
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+
+
+
+
+.nico {
+    background-image: url('portada_nd.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.seba h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    color: black;
+    background-color: transparent;
+}
+
+.seba p {
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
