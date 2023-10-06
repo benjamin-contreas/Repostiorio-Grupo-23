@@ -1,4 +1,4 @@
-const Miembros = () => {
+const Integrantes = () => {
   return (
     <div className="container">
       <h2 className="flex">Conoce a nuestros integrantes</h2>
@@ -23,4 +23,4 @@ const Miembros = () => {
   );
 };
 
-export default Miembros;
+export default Integrantes;
