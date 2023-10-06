@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Bienvenida from './components/Bienvenida';
 import Nosotros from './components/Nosotros';
+import Integrantes from './components/Integrantes';
 import './Utilities.css';
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
 
       <div className='nosotros'>
         <Nosotros />
+      </div>
+
+      <div className='integrantes'>
+        <Integrantes />
       </div>
     </div>
   );
