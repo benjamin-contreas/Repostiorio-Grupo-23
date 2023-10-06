@@ -7,6 +7,7 @@
   --light-color: #f4f4f4;
   --success-color: #5cb85c;
   --error-color: #d9534f;
+  --grey: rgb(216, 216, 216);
 }
 
 body {
@@ -90,4 +91,29 @@ code {
 
 .bienvenida .flex {
   flex-direction: column;
+}
+
+/* Nosotros */
+.nosotros {
+  height: 300px;
+  background-color: var(--grey);
+  color: var(--dark-color);
+  position: relative;
+}
+
+.nosotros .flex {
+  flex-direction: column;
+}
+
+.nosotros h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+  padding: 0;
+}
+
+.nosotros p {
+  font-size: 20px;
+  margin: 15px;
+  padding: 0;
 }
