@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Miembro1 from './pages/Miembro1'
+import Miembro2 from './pages/Miembro2'
+import Miembro3 from './pages/Miembro3'
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
     path: "miembro1",
     element: <Miembro1 />,
   },
+  {
+    path: "miembro2",
+    element: <Miembro2 />,
+  },
+  {
+    path: "miembro3",
+    element: <Miembro3 />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

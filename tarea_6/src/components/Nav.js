@@ -6,10 +6,10 @@ const Nav = () => {
         <h1>Grupo 23</h1>
         <nav>
             <ul>
-                <li><Link to= "/"></Link>Inicio</li>
-                <li><Link to="/miembro1"></Link>Nicolás Durán</li>
-                <li><Link to="#"></Link>Sebastían Barthou</li>
-                <li><Link to="#"></Link>Benjamín Contreras</li>
+                <li><Link to= "/">Inicio</Link></li>
+                <li><Link to="/miembro1">Nicolás Durán</Link></li>
+                <li><Link to="/miembro2">Sebastían Barthou</Link></li>
+                <li><Link to="/miembro3">Benjamín Contreras</Link></li>
             </ul>
         </nav>
     </div>

@@ -1,9 +1,15 @@
+import Nav from "../components/Nav";
+import About from "../components/About";
 const Miembro3 = () => {
-    return (
-        <div>
-        <h1>Este es el miembro 3</h1>
-        </div>
-    );
-    }
-    export default Miembro3;
-    
+  return (
+    <div>
+      <div className="navbar">
+        <Nav></Nav>
+      </div>
+      <div className="about">
+        <About></About>
+      </div>
+    </div>
+  );
+};
+export default Miembro3;
