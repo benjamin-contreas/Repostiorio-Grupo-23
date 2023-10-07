@@ -172,3 +172,28 @@ code {
   margin: 15px;
   padding: 0;
 }
+
+.empty {
+  height: 150px;
+  background-color: var(--light-color);
+  color: var(--light-color);
+}
+
+.info-miembro {
+  height: 400px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.info-miembro .grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-miembro img {
+  height: auto;
+}
+
+.texto-miembro {
+  align-items: start;
+  padding: 20px;
+}
