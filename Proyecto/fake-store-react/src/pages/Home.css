@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url('../assets/home-bg.jpg');
+}
+
+.container-height {
+    height: "500px";
+}
+
+.card-size {
+    width: 500px;
+    height: 400px;
+}
