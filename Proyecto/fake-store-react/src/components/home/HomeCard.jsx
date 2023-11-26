@@ -1,32 +1,53 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 
-const HomeCard = ({ imageUrl, title, price }) => {
+function ProductCard({ product }) {
+  const descriptionWords = product.description.split(' ');
+  const truncatedDescription = descriptionWords.slice(0, 20).join(' ');
+
+  const imageStyle = {
+    maxWidth: '100%',
+    maxHeight: '300px',
+    width: 'auto',
+    height: 'auto',
+  };
+
   return (
-    <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img className="p-8 rounded-t-lg" src={imageUrl} alt="product image" />
+    <div className='border border-neutral-500 p-4 rounded-md shadow-xl'>
+      <a href='#' className='text-xl text-stone-800 hover:underline'>
+        {product.title}
       </a>
-      <div className="px-5 pb-5">
-        <a href="#">
-          <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-            {title}
-          </h5>
+
+      <img
+        className='p-2 w-48 mx-auto mt-4'
+        src={product.image}
+        alt=''
+        style={imageStyle}
+      />
+
+      <p className='text-xs text-stone-600 mt-3'>
+        <span>Category: </span>
+        <a href='#' className='hover:underline'>
+          {product.category}
         </a>
-        <div className="flex items-center justify-between">
-          <span className="text-3xl font-bold text-gray-900 dark:text-white">
-            {price}
-          </span>
-          <Link
-            to="/fake-store-react/shop"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Add to cart
-          </Link>
-        </div>
+      </p>
+
+      <p className='text-zinc-400 p-2'>{truncatedDescription}</p>
+
+      <div className='flex items-center justify-between mx-3 mt-3'>
+        <p className='text-left'>
+          <span className='text-stone-500 underline'>Price</span>
+          <span className='text-stone-500'>: </span>
+          <span className='text-stone-600'>${product.price}</span>
+        </p>
+        <Link to="/fake-store-react/shop">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Go to Store
+          </button>
+        </Link>
       </div>
     </div>
   );
-};
+}
 
-export default HomeCard;
+export default ProductCard;
