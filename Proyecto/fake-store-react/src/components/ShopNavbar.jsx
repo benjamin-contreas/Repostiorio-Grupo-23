@@ -10,7 +10,7 @@ function ShopNavbar() {
     useContext(ProductContext);
 
   return (
-    <div className="p-4 flex justify-between items-center">
+    <div className="p-4 flex justify-center items-center">
       <div className="flex items-center font-bold border border-neutral-400 px-6 py-3 rounded-md shadow-md">
         <a
           className="hover:shadow-xl rounded-md active:bg-stone-100 active:shadow-md mr-4"
@@ -47,20 +47,6 @@ function ShopNavbar() {
         >
           Electronics
         </a>
-      </div>
-
-      <div className="flex items-center">
-        <input
-          type="text"
-          placeholder="Search products"
-          className="mr-2 px-2 py-1 border border-blue-400 rounded w-[250px]"
-        />
-        <button
-          type="button"
-          className="px-4 py-1.5 bg-blue-400 rounded hover:bg-blue-500 active:bg-blue-600"
-        >
-          Search
-        </button>
       </div>
     </div>
   );

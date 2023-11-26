@@ -1,6 +1,9 @@
 import AddButton from "./AddButon";
 
 function ProductCard({ product }) {
+  const descriptionWords = product.description.split(' ');
+  const truncatedDescription = descriptionWords.slice(0, 20).join(' ');
+
   return (
     <div className='border border-neutral-500 p-4 rounded-md shadow-xl'>
       <a href='#' className='text-xl text-stone-800 hover:underline'>
@@ -16,7 +19,7 @@ function ProductCard({ product }) {
         </a>
       </p>
 
-      <p className='text-zinc-400 p-2'>{product.description}</p>
+      <p className='text-zinc-400 p-2'>{truncatedDescription}</p>
 
       <div className='flex items-center justify-between mx-3 mt-3'>
         <p className='text-left'>

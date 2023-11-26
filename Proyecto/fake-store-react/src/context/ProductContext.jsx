@@ -73,6 +73,7 @@ export function ProductContextProvider(props) {
         totalPrice,
         setTotalPrice,
         removeFromTotalPrice,
+        data,
       }}
     >
       {props.children}
