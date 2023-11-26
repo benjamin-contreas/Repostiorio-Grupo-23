@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link to="/fake-store-react/shop" className="text-white hover:text-gray-300">
             Shop
           </Link>
-          <Link to="/fake-store-react/about" className="text-white hover:text-gray-300">
+          <Link to="/fake-store-react/aboutUs" className="text-white hover:text-gray-300">
             About Us
           </Link>
           <Link to="/fake-store-react/contact" className="text-white hover:text-gray-300">

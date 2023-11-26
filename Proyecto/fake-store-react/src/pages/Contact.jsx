@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
             <div className="text-white lg:w-1/2 lg:mx-6">
               <h1 className="text-2xl font-semibold capitalize lg:text-3xl">
-                Ultimate design solution
+                Contact us
               </h1>
 
               <p className="max-w-xl mt-6">
